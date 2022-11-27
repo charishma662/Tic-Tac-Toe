@@ -428,26 +428,6 @@ int main(){
 							
 							
 						int xx = sock44[part_sock];
-						
-						
-						/*int ind;
-						if(i==0){
-							arr2[i] = 0;
-							ply1_sock = 0;
-							ind = i;
-						}	
-						if(i==1){
-							arr2[i] = 0;
-							ply2_sock = 0;
-							ind = i;
-						} 
-						
-						int part;
-						int part_sock;
-						if(i==0)
-							part_sock = ply1_sock;
-						if(i==1)
-							part_sock = ply2_sock;  */
 							
 						char msg1[2] = "6";
 						send_message(xx,msg1);
@@ -455,17 +435,14 @@ int main(){
 						printf("Host disconnected, ip %s, port %d \n", inet_ntoa(add.sin_addr),ntohs(add.sin_port));
 						close(xx);
 						sock44[part_sock]=0;
-					//	goto(exit_server);
+					
 						
 					}
-					
-				//	buffer[valread] = 0;
 				
 				else{
 					buffer[valread] = 0;
 					
 					switch(buffer[0]){
-					//if(buffer[0] == '1'){
 					case '1' :
 						printf("\n");
 						int row;
