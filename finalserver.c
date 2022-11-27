@@ -68,8 +68,6 @@ int check_winner(int row,int col){
 	for(int i=0;i<3;i++){
 		for(int j=0;j<3;j++){
 			if(j!=2){
-				//printf("lavda2");
-				//fflush(stdout);
 				if(mat[i][j]=='X' || mat[i][j] == 'O'){
 					strcat(ret," ");
 					//printf("before is %c\n",mat[i][j]);
